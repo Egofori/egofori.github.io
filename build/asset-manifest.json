@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.227d9237.chunk.css",
+    "main.js": "/static/js/main.26c188fb.chunk.js",
+    "main.js.map": "/static/js/main.26c188fb.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fc5770a6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fc5770a6.js.map",
+    "static/css/2.0be890e3.chunk.css": "/static/css/2.0be890e3.chunk.css",
+    "static/js/2.73ce9e06.chunk.js": "/static/js/2.73ce9e06.chunk.js",
+    "static/js/2.73ce9e06.chunk.js.map": "/static/js/2.73ce9e06.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.bee7ddd20d5a55bc75c43ed3b2ca4edf.js": "/precache-manifest.bee7ddd20d5a55bc75c43ed3b2ca4edf.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.0be890e3.chunk.css.map": "/static/css/2.0be890e3.chunk.css.map",
+    "static/css/main.227d9237.chunk.css.map": "/static/css/main.227d9237.chunk.css.map",
+    "static/js/2.73ce9e06.chunk.js.LICENSE": "/static/js/2.73ce9e06.chunk.js.LICENSE",
+    "static/media/Elon_Musk___The_Story_Of_How_He_Became_A_Multi-Millionaire_Entrepreneur_in_his_20_s.mp4": "/static/media/Elon_Musk___The_Story_Of_How_He_Became_A_Multi-Millionaire_Entrepreneur_in_his_20_s.57adcf5b.mp4",
+    "static/media/api.png": "/static/media/api.17da5a4d.png",
+    "static/media/Login_style.css": "/static/media/books.c8cd3825.jpg",
+    "static/media/semantic.min.css": "/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/Developer_style.css": "/static/media/developer.db22a923.jpg",
+    "static/media/style.css": "/static/media/header_bg.d871edf7.png",
+    "static/media/List_classes_style.css": "/static/media/logo2.de64afb3.png",
+    "static/media/About_style.css": "/static/media/plane.71db1c49.png",
+    "static/media/videopage.png": "/static/media/videopage.ff33c95e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fc5770a6.js",
+    "static/css/2.0be890e3.chunk.css",
+    "static/js/2.73ce9e06.chunk.js",
+    "static/css/main.227d9237.chunk.css",
+    "static/js/main.26c188fb.chunk.js"
+  ]
+}
