@@ -1,0 +1,22 @@
+.Register-body{
+    background-image: url(../../images/logo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+#Registration-form{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8%;
+}
+
+/*registration report*/
+.Register-form-body{
+    display: flex;
+    flex-flow: column;
+}

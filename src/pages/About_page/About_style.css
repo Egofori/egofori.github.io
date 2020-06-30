@@ -1,0 +1,113 @@
+/*middle1*/
+.About_page-middle1{
+    background-image: url(../../images/pic3.png); 
+    background-size: cover;
+    height:300px;
+    
+}
+.About_page-title {
+    font-family: comic Sans Ms;
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    padding-top: 90px;
+}
+
+/*middle2*/
+.About_page-middle2{
+    background-image: url(../../images/plane.png);
+    height: 800px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column;
+    background-position: right top;
+}
+
+.Middle2-wrapper{
+    width: 50%;
+    margin: 30px auto 20px auto;
+}
+
+/*Feature*/
+.Feature-left_icon img{
+    height: 100px;
+    width: 100px;
+    
+}
+.Feature-left_icon{
+    display: inline-block;
+}
+
+.Feature-left_wrapper{
+    margin-left: 20px;
+    position: relative;
+    width: 80%;
+    display: inline-block;
+    text-align: left;
+}
+
+.Feature-right_icon{
+    display: inline-block;
+}
+
+.Feature-right_wrapper{
+    margin-right: 20px;
+    position: relative;
+    width: 80%;
+    display: inline-block;
+    text-align: right;
+}
+ /*middle3*/
+ .About_page-Middle3{
+     padding-top: 2%;
+     padding-left: 1%;
+    background-color:#0089AC ;
+    height: 500px;
+    font-family: comic Sans MS;
+    display: flex;
+    justify-content: space-between;
+ }
+ .About_page-inside input[type=text]{
+    border-radius: 20px !important;
+    font-family: comic Sans Ms !important;
+    width: 225px !important;
+ }
+ .About_page-inside input{
+     margin-bottom: 10px;
+ }
+ .About_page-textarea TextArea{
+    width: 225px !important;
+    height: 150px;
+    border-radius: 17px !important;
+    font-family: comic Sans Ms !important;
+
+}
+.About_page-border{
+    border: 2px solid;
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    border-color: #00CBFF;
+    display: inline-block;
+    margin-right: 40%;
+}
+.About_page-inside{
+    margin-left: 38px; margin-top: 20px;
+}
+.About_page-button button[type=submit]{
+    background-color: #FF8C00;
+    color:white;
+    padding: 10px 32px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 100px;
+    position: relative;
+    border-style:none;
+    font-weight: bold;
+    font-family: comic Sans Ms;
+}
+.About_page-title1{
+    color: white;
+    font-size: 3em;
+    display: inline-block;
+}

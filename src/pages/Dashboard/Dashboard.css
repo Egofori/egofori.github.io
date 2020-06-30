@@ -1,0 +1,36 @@
+.biglogo{
+    background-image: url(../../images/logo2.png);
+    height: 120%;
+    background-repeat: no-repeat;
+    margin-top: -24%;
+    margin-left: 60%;
+}
+.manage_reports_links{
+    margin-left: 41%;
+    margin-top: 5%;
+    
+}
+.manage_reports_links ul{
+    list-style: none; 
+   
+}
+.manage_reports_links ul li a{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    font-family: Comic Sans MS;
+    
+    }
+    .manage_reports_links ul li a:hover {
+        color:#FFC000;
+    }
+    .folders{
+        background-color:#0089AC;
+        
+        
+    }
+    .templates{
+        background-color:#00A45F;
+       
+    }

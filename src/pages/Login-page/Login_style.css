@@ -1,0 +1,79 @@
+.Login_page-body {
+    background-image: url(../../images//books.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    font-family: comic Sans Ms;
+  }
+  
+
+  
+  .Login_page-outerBodyDiv {
+    width: 400px;
+    margin: 6% auto 40px auto;
+    text-align: center;
+  }
+  
+  .Login_page-innerBodyDiv {
+    background: url(../../images/login_bg1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    padding-top: 40px;
+  }
+  
+
+  
+  .Login_page-innerBodyDiv div form {
+    position: absolute;
+  }
+  
+  .Login_page-innerBodyDiv form input,
+  .Login_page-innerBodyDiv form .select {
+    margin: 2.5%;
+    padding: 9px;
+    border: 1px solid transparent !important;
+    border-radius: 15px !important;
+  }
+  
+  .Login_page-innerBodyDiv form .select {
+    width: 273px;
+  }
+  
+  .Login_page-innerBodyDiv form input {
+    width: 273px;
+  }
+  
+  .Login_page-innerBodyDiv form button {
+    background-color: orange;
+    border: 1px solid transparent;
+    padding: 8px 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .Login_page-innerBodyDiv form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    
+  }
+  
+  .innerBodyDiv form select,
+  .innerBodyDiv form input[type="email"],
+  .innerBodyDiv form input[type="password"] {
+    background-repeat: no-repeat;
+    background-position: 240px;
+    background-color: white;
+    background-size: 16px;
+  }
+  
+  

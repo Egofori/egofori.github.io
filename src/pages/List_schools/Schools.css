@@ -1,0 +1,89 @@
+.List_schools-body{
+    background-image: url(../../images/logo2.png);
+    height:100%;
+    min-height: 100%;
+    background-size: cover;
+    overflow-y: auto;
+    color: black;
+}
+.List_schools-all {
+    display: flex; 
+    flex-wrap: wrap;
+    overflow: auto;
+}
+.List_schools-all:after{
+    content: "";
+    clear: both;
+  }
+  .List_schools-button-image{
+    margin-left: 3%;
+    margin-top: 6%;
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+}
+
+   
+.List_schools-button-image button{
+    background-image: url(../../images/yellow.png);
+    background-size: 55px 65px;
+    background-color: rgba(0, 0, 0, 0);
+    min-height: 65px;
+    min-width: 55px;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.List_schools-all button{
+    height: 45px;
+    width: 45px;
+}
+
+.Schools-rectangle-image{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    background-repeat: no-repeat;
+    background-size: 150px 140px;
+    height: 140px;
+    width: 150px;
+    margin-top: 40px;
+    text-align: center;
+    border-style: solid;
+    color: #ffbb00;
+    border-radius: 20px;
+    background-color: white;
+
+}
+.Schools-rectangle-image p {
+    font-size: 0.9em;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    margin: 0px auto 0px auto;    
+}
+.School-body{
+    max-width: 150px;
+    max-height: 140px;
+    position: relative;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+}
+.School-ellipsis{
+    color: rgb(0, 0, 0);
+    margin-left: 90px;
+    position: absolute;
+    z-index: 1;
+    right: -2px;
+    top: 5px;
+}
+
+.list_schools-state{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5px;
+    margin-top: 35%;
+    width: 100%;
+  }

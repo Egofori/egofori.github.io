@@ -1,0 +1,59 @@
+.Manage_reports-body{
+    height: 100%;
+    width: 100%;
+}
+
+.Manage_reports-all{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.Manage_reports-add_folder button{
+    background: url("../../images/add_folder.png");
+    height: 54px;
+    width: 50px;
+    background-repeat: no-repeat;
+    border: none;
+    background-position: 0px -5px;
+    background-size: 50px 60px;
+    
+}
+
+.Manage_reports-add_folder{
+    margin-left: 3%;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.Report_folder-body{
+    position: relative;
+    height: 100px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: #F9B803;
+    text-align: center;
+   
+}
+
+.Report_folder-body img{
+    position: relative;
+    margin-top: 10px;
+    height: 40px;
+}
+
+.Report_folder-body p{
+    font-size: 0.8em;
+    margin-top: 10px;
+    color: white;
+}
+
+.Report_folder-ellipsis{
+    color:white;
+    margin-left: 90px;
+    position: absolute;
+    z-index: 1;
+    right: -2px;
+    top: 5px;
+}
+

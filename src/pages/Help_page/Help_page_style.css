@@ -1,0 +1,106 @@
+.Help-body-color{
+    background-color: #EEEEEE;
+    height: 400px;
+    
+    
+}
+.Help_section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -90px;
+
+}
+.help-border1,.help-border2,.help-border3{
+    width: 300px;
+    height: 280px;
+    border-style: none;
+    background-color: white;
+    z-index: 20;  
+    
+}
+.left-column_help,.center-column_help,.right-column_help{
+    text-align: center;
+    padding-top: 10%;
+}
+.help-title01,.help-title02,.help-title03{
+    font-size: 1.5em;
+    font-weight: bold;  
+}
+.help-icon-question{
+    background-image: url(../../images/question.png);
+}
+.help-icon-video{
+    background-image: url(../../images/video.png);
+}
+.help-icon-message{
+    background-image: url(../../images/messages.png);
+}
+.help-icon-question,.help-icon-video,.help-icon-message{
+    background-size: 100px 100px;
+    height:100px;
+    background-repeat: no-repeat;
+    margin-left: 33%;
+    margin-top: -15%;
+}
+/*video_tutorial*/
+.Video_body{
+    background-color: white;
+    height: 500px;
+    width: 100%;
+    max-height: 500px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.Video_video{
+    height: 100%;
+    width: 80%;
+    background-color: #EEEEEE;
+}
+
+.Video_text{
+    display: inline-block;
+    height: 100%;
+    width: 200px;
+}
+
+.Video_text :nth-child(1){
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Video_player{
+    display: inline-block;
+    width: 60%;
+    height: 500px;
+}
+
+/*help_page-middle2*/
+.help_page_middle2{
+    background-color: #FF9595;
+    height: 45%;
+}
+.help_page_middle2_icon{
+    background-image: url(../../images/help.png);
+    height: 130px;
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 15%;
+}
+.help_page_middle2 button{
+    height: 25%;
+    width:25%;
+    font-family: comic Sans Ms;
+    font-weight: bold;
+    border-radius: 40px;
+    background-color:#FF5858;
+    border-style: none;
+    margin-left: 38%;
+    margin-top: -5%;
+    color:white;
+    font-size: 1.5em;
+}

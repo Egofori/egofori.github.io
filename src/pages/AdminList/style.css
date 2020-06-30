@@ -1,0 +1,84 @@
+.List_reports-body{
+  background-image: url(../../images/logo2.png);
+  height:100%;
+  min-height: 100%;
+  background-size: cover;
+  overflow-y: auto;
+}
+
+.List_Admin-all{
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+.List_reports-all:after{
+content: "";
+clear: both;
+}
+
+.List_admin-button-image{
+  margin-left: 3%;
+  margin-top: 60px;
+  display: inline-block;
+}
+
+.List_admin-button-image button{
+background: url("../../images/blue_btn.png");
+background-size: 55px 65px;
+background-color: rgba(0, 0, 0, 0);
+min-height: 65px;
+min-width: 55px;
+background-repeat: no-repeat;
+border: none;
+}
+
+.Report-Rectangle{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+  background: url('../../images/Group_70.png');
+  background-repeat: no-repeat;
+  background-size: 150px 140px;
+  height: 170px;
+  width: 150px;
+  text-align: center;
+  color: white;
+}
+
+.Report-Rectangle p{
+  margin-top: -5px;
+  /*display: inline-block;*/
+}
+
+.Report-Rectangle img{
+  position: relative;
+  height: 80px;
+  margin: 25px auto 5px auto;
+  
+}
+
+.AdminBody{
+  max-width: 150px;
+  max-height: 140px;
+  position: relative;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 3%;
+}
+
+.AdminEllipsis{
+  color:white;
+  margin-left: 90px;
+  position: absolute;
+  z-index: 1;
+  right: -2px;
+  top: 5px;
+}
+
+.ListReports{
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5px;
+}

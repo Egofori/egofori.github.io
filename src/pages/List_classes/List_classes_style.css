@@ -1,0 +1,85 @@
+.List_classes-body {
+    height: 100%;
+    min-height: 100%;
+    background-size: cover;
+}
+
+.List_classes-all {
+    background-image: url(../../images/logo2.png);
+    background-size: 80% 135%;
+    background-position: 300% 55%;
+    background-repeat: no-repeat;
+    min-height: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.List_classes-all:after {
+    content: "";
+    clear: both;
+}
+
+.List_classes-button-image {
+    margin-left: 3%;
+    margin-top: 50px;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.List_classes-button-image button {
+    background: url("../../images/managetemplatebutton.png");
+    background-size: 45px 60px;
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.Classes-rectangle-text {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    background-repeat: no-repeat;
+    background-size: 150px 140px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.Classes-rectangle-text p {
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+}
+
+.Classes-body {
+    border: 2px solid green;
+    border-radius: 20px;
+    width: 150px;
+    height: 140px;
+    position: relative;
+    margin-top: 1%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.Classes-ellipsis {
+    color: rgb(0, 0, 0);
+    margin-left: 90px;
+    position: absolute;
+    z-index: 1;
+    right: -2px;
+    top: 5px;
+}
+
+.list_classes-status {
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5px;
+}
