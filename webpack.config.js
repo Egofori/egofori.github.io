@@ -36,7 +36,7 @@ const config = {
   },
  devServer: {
   compress: true,
-  public: 'store-client-nestroia1.c9users.io' // That solved it
+  public: 'scribblersapp.herokuapp.com' // That solved it
  },
   resolve: {
     extensions: [
