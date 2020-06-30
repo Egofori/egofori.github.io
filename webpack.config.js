@@ -35,9 +35,8 @@ const config = {
     ]
   },
  devServer: {
-    compress: true,
-    disableHostCheck: true,   // That solved it
-
+  compress: true,
+  public: 'store-client-nestroia1.c9users.io' // That solved it
  },
   resolve: {
     extensions: [
