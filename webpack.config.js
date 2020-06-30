@@ -36,6 +36,7 @@ const config = {
   },
  devServer: {
   compress: true,
+  disableHostCheck: true,
   public: 'scribblersapp.herokuapp.com' // That solved it
  },
   resolve: {
