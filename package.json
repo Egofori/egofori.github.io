@@ -1,11 +1,12 @@
 {
-    "homepage":"https://scribblersapp.herokuapp.com/",
+  "homepage":"https://scribblersapp.herokuapp.com/",
   "name": "sribblers",
   "version": "0.1.0",
   "private": true,
     "engines": {
     "node": "12.x"
   },
+  "react-scripts": "^3.4.1",
   "dependencies": {
     "@babel/runtime": "^7.10.2",
     "@testing-library/jest-dom": "^4.2.4",
