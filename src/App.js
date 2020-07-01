@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import {HashRouter, Switch, Route} from 'react-router-dom'
 import Login_page from './pages/Login-page/Login_page'
 import List_reports from './pages/List-reports/List_reports'
 import Create_report from './pages/Create_report/Create_report'
@@ -23,7 +23,7 @@ import NoMatch from './pages/Page_404/Page_404'
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
         <Route path="/" exact component={Login_page}/>
         <Route path="/dashboard/profile" exact component={Tutor_account}/>
@@ -49,7 +49,7 @@ function App() {
         <Route path="/developer/dashboard/schools/edit/school" exact component={Register}/>
         <Route component={NoMatch} />
       </Switch>
-    </BrowserRouter>      
+    </HashRouter>      
   )
 }
 export default App
