@@ -38,7 +38,7 @@ function Common_header(props) {
   //used to log out the user
   const handleLogoutClick = () => {
     removeCookie("info")
-    // props.history.push('/')
+    props.history.push('/')
   }
 
   const droppedURL = dropped ? dropUp : dropDown;

@@ -56,7 +56,7 @@ function List_reports(props) {
             return (
                 <React.Fragment>
                     <div className="List_reports-body">
-                        <Common_header {...props} title="List Reports" />
+                        <Common_header {...props} title="List of Reports" />
                         <div className="List_reports-all">
                             {reportsList.map((report) =>
                                 <Report

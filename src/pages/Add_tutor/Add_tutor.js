@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import Common_header from '../../components/Header/Common_header/Common_header'
+import Admin_header from "../../components/Header/Admin_header/Admin_header"
+// import Common_header from '../../components/Header/Common_header/Common_header'
 import Tutor_form from './Tutor_form'
 import Common_footer from '../../components/Footer/Common_footer/Common_footer'
 import './Add_tutor.css'
@@ -30,7 +31,7 @@ function Add_tutor(props) {
             return (
                 <React.Fragment>
                     <div className="Add_tutor-body">
-                        <Common_header {...props} title="Add a new tutor" />
+                        <Admin_header {...props} title="Add a new tutor" />
                         <div id="Add_tutor-form">
                             <Tutor_form {...props} />
                         </div>

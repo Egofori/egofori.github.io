@@ -1,8 +1,9 @@
 import React from 'react'
 import './List_classes_style.css'
 import Classes from './Classes'
-import Common_header from "../../components/Header/Common_header/Common_header"
+// import Common_header from "../../components/Header/Common_header/Common_header"
 import Common_footer from "../../components/Footer/Common_footer/Common_footer"
+import Admin_header from "../../components/Header/Admin_header/Admin_header"
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Popup, Modal, Input, Button } from 'semantic-ui-react'
@@ -46,7 +47,7 @@ function List_classes(props) {
 
             return (<React.Fragment >
                 <div className="List_classes-body" >
-                    <Common_header title="Classes" />
+                    <Admin_header title="Classes" {...props}/>
                     <div className="List_classes-all" > {
                         schoolTutorList.map((schoolTutor) =>
                             <Classes {...props}

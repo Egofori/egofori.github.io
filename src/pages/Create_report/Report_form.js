@@ -134,6 +134,7 @@ function Report_form(props) {
             first_name: (name === "firstName") ? value : formData.first_name,
             last_name: (name === "lastName") ? value : formData.last_name,
             age: (name === "age") ? value : formData.age,
+            level: (name === "level") ? value : formData.level,
             school_year: (name === "schoolYear") ? value : formData.school_year,
             days_open: (name === "daysOpen") ? value : formData.days_open,
             days_present: (name === "daysPresent") ? value : formData.days_present
@@ -167,7 +168,7 @@ function Report_form(props) {
             last_name: formData.last_name.trim(),
             sex: formData.sex,
             age: formData.age,
-            level: formData.level,
+            level: cookies.info.staff.level,
             id_tutor: cookies.info.staff.id_tutor,
             school_year: formData.school_year.trim(),
             days_open: formData.days_open,

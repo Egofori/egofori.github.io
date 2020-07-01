@@ -1,5 +1,6 @@
 import React from "react"
-import Common_header from '../../components/Header/Common_header/Common_header'
+// import Common_header from '../../components/Header/Common_header/Common_header'
+import Admin_header from "../../components/Header/Admin_header/Admin_header"
 import Common_footer from '../../components/Footer/Common_footer/Common_footer'
 import { useCookies } from 'react-cookie'
 import { Link, Redirect } from 'react-router-dom'
@@ -16,7 +17,7 @@ function MainComponent(props) {
     if (cookies.info.loggedIn == true) {
       return (
         <div>
-          <Common_header {...props} title="Account" />
+          <Admin_header {...props} title="Account" />
           <Body {...props} />
           <Common_footer />
         </div>

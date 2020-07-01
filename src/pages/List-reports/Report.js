@@ -62,7 +62,6 @@ function Report(props) {
                     <img src={Profile_image}></img>
                     <p><strong>Name: </strong>{props.name}</p>
                     <div className="list_reports-status">
-                        <p><strong>Status:</strong> {props.status}</p>
                         <p><strong>Sex:</strong>{props.sex}</p>
                     </div>
                 </div>

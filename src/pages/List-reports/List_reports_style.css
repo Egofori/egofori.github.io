@@ -79,7 +79,6 @@
 
 .list_reports-status{
     margin-left: 10px;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
     padding-right: 5px;
   }

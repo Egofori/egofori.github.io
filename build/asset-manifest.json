@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.8fd22c46.chunk.css",
-    "main.js": "/static/js/main.8c024cc2.chunk.js",
-    "main.js.map": "/static/js/main.8c024cc2.chunk.js.map",
+    "main.css": "/static/css/main.e55acc79.chunk.css",
+    "main.js": "/static/js/main.b14ebf05.chunk.js",
+    "main.js.map": "/static/js/main.b14ebf05.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fc5770a6.js",
     "runtime-main.js.map": "/static/js/runtime-main.fc5770a6.js.map",
     "static/css/2.0be890e3.chunk.css": "/static/css/2.0be890e3.chunk.css",
-    "static/js/2.73ce9e06.chunk.js": "/static/js/2.73ce9e06.chunk.js",
-    "static/js/2.73ce9e06.chunk.js.map": "/static/js/2.73ce9e06.chunk.js.map",
+    "static/js/2.f8bc643d.chunk.js": "/static/js/2.f8bc643d.chunk.js",
+    "static/js/2.f8bc643d.chunk.js.map": "/static/js/2.f8bc643d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.34a46d22c6d8ad7c93aa15d2451ffa1f.js": "/precache-manifest.34a46d22c6d8ad7c93aa15d2451ffa1f.js",
+    "precache-manifest.1333b668dfb9f4ec975bd32219c09a11.js": "/precache-manifest.1333b668dfb9f4ec975bd32219c09a11.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.0be890e3.chunk.css.map": "/static/css/2.0be890e3.chunk.css.map",
-    "static/css/main.8fd22c46.chunk.css.map": "/static/css/main.8fd22c46.chunk.css.map",
-    "static/js/2.73ce9e06.chunk.js.LICENSE": "/static/js/2.73ce9e06.chunk.js.LICENSE",
-    "static/media/Elon_Musk___The_Story_Of_How_He_Became_A_Multi-Millionaire_Entrepreneur_in_his_20_s.mp4": "/static/media/Elon_Musk___The_Story_Of_How_He_Became_A_Multi-Millionaire_Entrepreneur_in_his_20_s.57adcf5b.mp4",
+    "static/css/main.e55acc79.chunk.css.map": "/static/css/main.e55acc79.chunk.css.map",
+    "static/js/2.f8bc643d.chunk.js.LICENSE": "/static/js/2.f8bc643d.chunk.js.LICENSE",
+    "static/media/How to use the Scribblers App as an Administrator or a Teacher.mp4": "/static/media/How to use the Scribblers App as an Administrator or a Teacher.3694f174.mp4",
     "static/media/api.png": "/static/media/api.17da5a4d.png",
     "static/media/Login_style.css": "/static/media/books.c8cd3825.jpg",
     "static/media/semantic.min.css": "/static/media/outline-icons.ef60a4f6.woff",
@@ -27,8 +27,8 @@
   "entrypoints": [
     "static/js/runtime-main.fc5770a6.js",
     "static/css/2.0be890e3.chunk.css",
-    "static/js/2.73ce9e06.chunk.js",
-    "static/css/main.8fd22c46.chunk.css",
-    "static/js/main.8c024cc2.chunk.js"
+    "static/js/2.f8bc643d.chunk.js",
+    "static/css/main.e55acc79.chunk.css",
+    "static/js/main.b14ebf05.chunk.js"
   ]
 }

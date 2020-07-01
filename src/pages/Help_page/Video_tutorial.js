@@ -1,6 +1,5 @@
 import React from 'react'
-import clip from '../../videos/Elon_Musk___The_Story_Of_How_He_Became_A_Multi-Millionaire_Entrepreneur_in_his_20_s.mp4'
-//import { Player } from 'video-react'
+import clip from '../../videos/How to use the Scribblers App as an Administrator or a Teacher.mp4'
 import Poster from '../../images/videopage.png'
 export default function Video_tutorial() {
     return (

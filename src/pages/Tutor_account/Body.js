@@ -13,6 +13,7 @@ export default function Body(props) {
   const [cookies, setCookie] = useCookies(['info'])
   //holds data for the form
   const [formData, setFormData] = useState({
+    id_school:'',
     title: '',
     first_name: '',
     last_name: '',
@@ -31,6 +32,7 @@ export default function Body(props) {
       //update formData with that found in the cookies
       setFormData({
         ...formData,
+        id_school: cookies.info.staff.id_school,
         title: cookies.info.staff.title,
         first_name: cookies.info.staff.first_name,
         last_name: cookies.info.staff.last_name,
