@@ -50,7 +50,7 @@ function Create_report(props) {
                                 color="orange"
                                 style={{
                                     width: "35%",
-                                    margin: "0px auto 0px auto"
+                                    margin: "-30px auto 0px auto"
                                 }}>
                                 <div
                                     style={{

@@ -6,7 +6,7 @@ import { useCookies } from 'react-cookie'
 
 export default function Assess_form(props) {
     //const subtables = [[['subject', 'class 50%', 'Exams 50%', 'Total 100%', 'Position', 'Remarks'], ['maths'], ['eng']], [['total marks']], [['Conduct'], ['Attitude'], ["Class Teacher's Remarks"], ["Headmistress/ Headmaster's Remarks"]], [['Total Fees'], ['Arrears'], ['Credit'], ['Grand Total']]]
-    const  [subtables,setSubtables] = useState([])
+    const [subtables, setSubtables] = useState([])
     //holds each sub-table
     const parsed = []
     var takenScores = {}
@@ -28,6 +28,11 @@ export default function Assess_form(props) {
     //tells if there has been changes made
     const [changed, setChanged] = useState(false)
 
+    //get the default template
+    axios.get('/default_template/' + cookies.info.staff.id_school + '/' + cookies.info.staff.level).then(({ data }) => {
+        setSubtables(eval(data.definition))
+    })
+
     useEffect(() => {
         //if (cookies.hasOwnProperty("info")) {
         // props.updateLog(cookies.info.loggedIn)
@@ -39,10 +44,7 @@ export default function Assess_form(props) {
         axios.get('/report_student/' + props.match.params.report_id).then(({ data }) => {
             setReport({ ...report, id_student: data.id_student })
         })
-        //get the default template
-        axios.get('/default_template/' + cookies.info.staff.id_school + '/'+cookies.info.staff.level).then(({ data }) => {
-            setSubtables(eval(data.definition))
-        })
+        
         //get a particular report with that report id
         axios.get('/report/' + props.match.params.report_id).then(({ data }) => {
             //store the scores temporarily
@@ -60,9 +62,6 @@ export default function Assess_form(props) {
                 document.getElementsByTagName("input")[i].value = temp[i]
             }
         })
-
-        //var value = {content:JSON.stringify(fieldValues), position: JSON.stringify(position)}
-        //setReport({ ...report, scores: value})
 
     }, [])
 
@@ -182,6 +181,8 @@ export default function Assess_form(props) {
             </table>
         )
     })
+
+    
     return (
         <div>
             <div className="wrap">

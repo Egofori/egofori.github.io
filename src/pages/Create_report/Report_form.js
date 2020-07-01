@@ -151,27 +151,41 @@ function Report_form(props) {
 
     //runs when the button is clicked
     const handleClick = async () => {
-        setFormData({
-            ...formData,
+        // setFormData({
+        //     ...formData,
+        //     first_name: formData.first_name.trim(),
+        //     last_name: formData.last_name.trim(),
+        //     age: formData.age,
+        //     level: cookies.info.staff.level.trim(),
+        //     school_year: formData.school_year.trim(),
+        //     days_open: formData.days_open,
+        //     days_present: formData.days_present
+        // })
+
+        const send_data = {
             first_name: formData.first_name.trim(),
             last_name: formData.last_name.trim(),
+            sex: formData.sex,
             age: formData.age,
-            level: cookies.info.staff.level.trim(),
+            level: formData.level,
+            id_tutor: cookies.info.staff.id_tutor,
             school_year: formData.school_year.trim(),
             days_open: formData.days_open,
             days_present: formData.days_present
-        })
-        var check = vForm.validate(config, formData)
+        }
+        var check = vForm.validate(config, send_data)
         if (check.valid) {
             if (props.match.params.hasOwnProperty("report_id")) {
                 //update the data on the api
                 const response = await fetch('/student/' + cookies.info.student.id_student, {
                     method: "PUT",
                     headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify(formData)
+                    body: JSON.stringify(send_data)
                 })
                 if (response.ok) {
                     props.history.push(`/dashboard/report_folders/${props.match.params.reports_folder_id}/reports/${props.match.params.report_id}/edit/scores`)
+                } else {
+                    props.return2Parent("An error occurred! Please check internet connection.")
                 }
             }
             else {
@@ -179,14 +193,14 @@ function Report_form(props) {
                 const response = await fetch('/student', {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify(formData)
+                    body: JSON.stringify(send_data)
                 })
 
                 if (response.ok) {
                     response.json().then(async (data) => {
                         //update the cookies
                         setCookie("info", { staff: cookies.info.staff, school: cookies.info.school, loggedIn: cookies.info.loggedIn, student: data }, { path: "/" })
-                        
+
                         //add a new report to the api
                         const response2 = await fetch('/report', {
                             method: "POST",
@@ -216,6 +230,8 @@ function Report_form(props) {
                                 props.history.push(`/dashboard/report_folders/${props.match.params.reports_folder_id}/reports/${data.id_report}/edit/scores`)
                             })
 
+                        } else {
+                            props.return2Parent("An error occurred! Please check internet connection.")
                         }
                     })
 

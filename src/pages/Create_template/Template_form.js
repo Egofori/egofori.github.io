@@ -105,6 +105,7 @@ export default function Template_form() {
             level: templateData.level.trim(),
             definition: templateData.definition.trim()
         }
+        console.log(send_data)
         //called the validate function of the ValidateForm class
         var check = vForm.validate(config, send_data)
         if (check.valid) {

@@ -46,20 +46,20 @@ export default function Tutor_form(props) {
             })
         }
 
-        axios.get('/default_template/' + cookies.info.staff.id_school).then(({ data }) => {
+        axios.get('/school_default_template/' + cookies.info.staff.id_school).then(({ data }) => {
             setLevelsList(data)
         })
-
-        //push the schools into the schools array
-        for (var i = 0; i < levelsList.length; i++) {
-            levels.push(
-                {
-                    key: levelsList[i].id_school,
-                    value: levelsList[i].name,
-                    text: levelsList[i].name
-                })
-        }
     }, [])
+
+    //push the schools into the schools array
+    for (var i = 0; i < levelsList.length; i++) {
+        levels.push(
+            {
+                key: levelsList[i].id_default_template,
+                value: levelsList[i].level,
+                text: levelsList[i].level
+            })
+    }
 
     const config = {
         first_name: {
@@ -95,13 +95,16 @@ export default function Tutor_form(props) {
     //runs when the button is clicked
     const handleClick = async () => {
         const send_data = {
+            id_school: cookies.info.staff.id_school,
             title: tutorData.title.trim(),
             first_name: tutorData.first_name.trim(),
             last_name: tutorData.last_name.trim(),
             email: tutorData.email.trim(),
             phone: tutorData.phone.trim(),
-            level: tutorData.level.trim()
+            level: tutorData.level,
+            password: tutorData.password
         }
+        console.log(send_data)
 
         var check = vForm.validate(config, tutorData)
         if (check.valid) {
@@ -160,7 +163,7 @@ export default function Tutor_form(props) {
             ...tutorData,
             level: (name === "level") ? value : tutorData.level,
         })
-
+        console.log(value)
     }
 
     const handleChange = (event) => {
@@ -172,16 +175,28 @@ export default function Tutor_form(props) {
             last_name: (name === "lastName") ? value : tutorData.last_name,
             email: (name === "email") ? value : tutorData.email,
             phone: (name === "phone") ? value : tutorData.phone,
-            level: (name === "level") ? value : tutorData.level,
             password: (name === "password") ? value : tutorData.password
         })
     }
 
 
     return (
-        <Form name="tutorForm" className="Tutor-form-body" >
+        <Form name="tutorForm" className="Tutor-form-body">
             <table border="1" bordercolor="black" cellPadding="2" cellSpacing="0">
                 <tbody>
+                    <tr>
+                        <td>Level:</td>
+                        <td>
+                            <Select
+                                className="select"
+                                name="level"
+                                placeholder='choose a level'
+                                options={levels}
+                                value={tutorData.level}
+                                onChange={handleSelectChange}
+                            />
+                        </td>
+                    </tr>
                     <tr>
                         <td>Title:</td>
                         <td>
@@ -240,18 +255,6 @@ export default function Tutor_form(props) {
                                 value={tutorData.phone}
                                 onChange={handleChange}
                             /></td>
-                    </tr>
-                    <tr>
-                        <td>Level:</td>
-                        <td>
-                            <Select
-                                className="select"
-                                name="school"
-                                placeholder='choose a level'
-                                options={levels}
-                                onChange={handleSelectChange}
-                            />
-                        </td>
                     </tr>
                     <tr>
                         <td>Password:</td>
