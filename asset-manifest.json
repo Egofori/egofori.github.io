@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.e55acc79.chunk.css",
-    "main.js": "/static/js/main.dad5a912.chunk.js",
-    "main.js.map": "/static/js/main.dad5a912.chunk.js.map",
+    "main.js": "/static/js/main.fbf84736.chunk.js",
+    "main.js.map": "/static/js/main.fbf84736.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fc5770a6.js",
     "runtime-main.js.map": "/static/js/runtime-main.fc5770a6.js.map",
     "static/css/2.0be890e3.chunk.css": "/static/css/2.0be890e3.chunk.css",
-    "static/js/2.ba6b37ac.chunk.js": "/static/js/2.ba6b37ac.chunk.js",
-    "static/js/2.ba6b37ac.chunk.js.map": "/static/js/2.ba6b37ac.chunk.js.map",
+    "static/js/2.a1bae451.chunk.js": "/static/js/2.a1bae451.chunk.js",
+    "static/js/2.a1bae451.chunk.js.map": "/static/js/2.a1bae451.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8052b2b487ea655cde676a50cab1240f.js": "/precache-manifest.8052b2b487ea655cde676a50cab1240f.js",
+    "precache-manifest.da81e85f2a8e9ac58f774dbbf7661cd1.js": "/precache-manifest.da81e85f2a8e9ac58f774dbbf7661cd1.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.0be890e3.chunk.css.map": "/static/css/2.0be890e3.chunk.css.map",
     "static/css/main.e55acc79.chunk.css.map": "/static/css/main.e55acc79.chunk.css.map",
-    "static/js/2.ba6b37ac.chunk.js.LICENSE": "/static/js/2.ba6b37ac.chunk.js.LICENSE",
+    "static/js/2.a1bae451.chunk.js.LICENSE": "/static/js/2.a1bae451.chunk.js.LICENSE",
     "static/media/How to use the Scribblers App as an Administrator or a Teacher.mp4": "/static/media/How to use the Scribblers App as an Administrator or a Teacher.3694f174.mp4",
     "static/media/api.png": "/static/media/api.17da5a4d.png",
     "static/media/Login_style.css": "/static/media/books.c8cd3825.jpg",
@@ -27,8 +27,8 @@
   "entrypoints": [
     "static/js/runtime-main.fc5770a6.js",
     "static/css/2.0be890e3.chunk.css",
-    "static/js/2.ba6b37ac.chunk.js",
+    "static/js/2.a1bae451.chunk.js",
     "static/css/main.e55acc79.chunk.css",
-    "static/js/main.dad5a912.chunk.js"
+    "static/js/main.fbf84736.chunk.js"
   ]
 }
